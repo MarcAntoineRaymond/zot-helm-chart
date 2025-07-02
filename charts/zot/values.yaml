@@ -20,7 +20,7 @@ serviceAccount:
 service:
   headless:
     # Enable headless service, only for statefulset
-    enabled: false
+    enabled: true
     # Headless service port
     port: 5000
     # Annotations to add to the headless service
