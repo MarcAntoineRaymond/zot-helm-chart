@@ -94,3 +94,11 @@ tests:
       - equal:
           path: spec.volumeClaimTemplates[0].metadata.name
           value: custom-pvc-pvc
+  
+  - it: should have an headless service
+    set:
+      persistence: true
+    asserts:
+      - equal:
+          path: spec.serviceName
+          value: zot-headless
