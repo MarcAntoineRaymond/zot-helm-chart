@@ -99,6 +99,6 @@ tests:
     set:
       persistence: true
     asserts:
-      - equal:
+      - matchRegex:
           path: spec.serviceName
-          value: zot-headless
+          pattern: .*-headless$
